@@ -1,0 +1,150 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.game-board{
+    width: 100%;
+    height: 500px;
+    border-bottom: 14px solid rgb(18, 137, 9);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB,#E0F6FF);
+}
+
+.terra-item{
+    display:flex;
+    width: 100%;
+    height: 21%;
+    position:absolute;
+}
+.mes{
+    margin-left:70%;
+    bottom: 0%;
+    width: 100px;
+    height: 150px;
+    position: absolute;
+}
+
+.toad{
+    margin-left:30%;
+    bottom: 0%;
+    width: 40px;
+    position: absolute;
+}
+
+.yoshi{
+    margin-left:80%;
+    bottom: 0%;
+    width: 90px;
+    position: absolute;
+}
+
+.luigi{
+    margin-left:79%;
+    bottom: -2%;
+    width: 47px;
+    position: absolute;
+}
+
+.peach{
+    margin-left:84%;
+    bottom: -2%;
+    width: 80px;
+    position: absolute;
+}
+
+.carnivora{
+    margin-left:40%;
+    bottom: 0%;
+    width: 37px;
+    height: 65px;
+    position: absolute;
+}
+
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 75px;
+    height: 80px;
+    animation: pipe-animation 2s infinite linear;
+}
+
+.mario{
+    width:100px;
+    position:absolute;
+    bottom:0;   
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+.clouds{
+    width: 300px;
+    position:absolute;
+    animation: pipe-animation 20s infinite linear;
+}
+
+
+.tijolo-item{
+    position: absolute; 
+    margin: 200px auto;
+    width: 150px;
+    text-align: center;
+    animation: pipe-animation 7s infinite linear;
+    
+}
+
+@keyframes pipe-animation {
+    from{
+        right: -75px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 180px;
+    }
+
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes clouds {
+    from{
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes tijolo-item {
+    from{
+        right: -75px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
